@@ -18,7 +18,8 @@ namespace TrybeHotel.Repository
             var allCities = from city in listCities
             select new CityDto {
                 CityId = city.CityId,
-                Name = city.Name
+                Name = city.Name,
+                State = city.State,
             };
             return allCities;
         }
@@ -32,7 +33,8 @@ namespace TrybeHotel.Repository
             
             var newCity = new CityDto {
                 CityId = city.CityId,
-                Name = city.Name
+                Name = city.Name,
+                State = city.State,
             }; 
             return newCity;
         }
