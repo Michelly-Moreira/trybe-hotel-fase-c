@@ -1,0 +1,7 @@
+/home/michelly/Trybe/trybe-project/eletiva-csharp/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/obj/Debug/net6.0/TrybeHotel.csproj.AssemblyReference.cache
+/home/michelly/Trybe/trybe-project/eletiva-csharp/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/obj/Debug/net6.0/TrybeHotel.GeneratedMSBuildEditorConfig.editorconfig
+/home/michelly/Trybe/trybe-project/eletiva-csharp/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/obj/Debug/net6.0/TrybeHotel.AssemblyInfoInputs.cache
+/home/michelly/Trybe/trybe-project/eletiva-csharp/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/obj/Debug/net6.0/TrybeHotel.AssemblyInfo.cs
+/home/michelly/Trybe/trybe-project/eletiva-csharp/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/obj/Debug/net6.0/TrybeHotel.csproj.CoreCompileInputs.cache
+/home/michelly/Trybe/trybe-project/eletiva-csharp/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/obj/Debug/net6.0/TrybeHotel.MvcApplicationPartsAssemblyInfo.cs
+/home/michelly/Trybe/trybe-project/eletiva-csharp/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/obj/Debug/net6.0/TrybeHotel.MvcApplicationPartsAssemblyInfo.cache
