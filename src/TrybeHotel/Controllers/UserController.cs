@@ -19,14 +19,28 @@ namespace TrybeHotel.Controllers
         }
         
         [HttpGet]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(Policy = "Admin")]
         public IActionResult GetUsers(){
-            throw new NotImplementedException();
+            
+            return Ok(_repository.GetUsers());
         }
 
         [HttpPost]
         public IActionResult Add([FromBody] UserDtoInsert user)
         {
-            throw new NotImplementedException();
+            if(user.Email == null)
+            {
+                return BadRequest(new {message = "Email cannot be null"});
+            }
+            var verifyEmail = _repository.GetUserByEmail(user.Email);
+            switch(verifyEmail)
+            {
+                case null:
+                return Created("user", _repository.Add(user));
+                default:
+                return Conflict(new { message = "User email already exists" });
+            }
         }
     }
 }
