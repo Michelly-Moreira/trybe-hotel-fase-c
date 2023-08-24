@@ -20,7 +20,14 @@ namespace TrybeHotel.Controllers
 
         [HttpPost]
         public IActionResult Login([FromBody] LoginDto login){
-           throw new NotImplementedException();
+           var verifyUser = _repository.Login(login);
+            switch (verifyUser)
+            {
+                case null:
+                return Unauthorized(new{message = "Incorrect e-mail or password"});
+                default:
+                return Ok(new{token = new TokenGenerator().Generate(verifyUser)});
+            }
         }
     }
 }
