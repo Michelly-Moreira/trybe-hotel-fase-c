@@ -19,18 +19,28 @@ namespace TrybeHotel.Controllers
 
         [HttpGet("{HotelId}")]
         public IActionResult GetRoom(int HotelId){
-            throw new NotImplementedException();
+            return Ok(_repository.GetRooms(HotelId));
+
         }
 
         [HttpPost]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(Policy = "Admin")]
         public IActionResult PostRoom([FromBody] Room room){
-            throw new NotImplementedException();
+            var token = HttpContext.User.Identity as ClaimsIdentity;
+            var email = token?.Claims.FirstOrDefault(c => c.Type == "email")?.Value;
+            return Created("",_repository.AddRoom(room));
         }
 
         [HttpDelete("{RoomId}")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(Policy = "Admin")]
         public IActionResult Delete(int RoomId)
         {
-             throw new NotImplementedException();
+            var token = HttpContext.User.Identity as ClaimsIdentity;
+            var email = token?.Claims.FirstOrDefault(c => c.Type == "email")?.Value;
+            _repository.DeleteRoom(RoomId);
+            return NoContent();
         }
     }
 }
