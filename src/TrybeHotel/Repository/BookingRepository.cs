@@ -60,6 +60,7 @@ namespace TrybeHotel.Repository
                             Address = h.Address,
                             CityId = h.CityId,
                             CityName = c.Name,
+                            State = c.State,
                         }
                     }
                 };
@@ -105,6 +106,7 @@ namespace TrybeHotel.Repository
                         Address = h.Address,
                         CityId = h.CityId,
                         CityName = c.Name,
+                        State = c.State,
                     }
                 }
             };
