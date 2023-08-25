@@ -33,7 +33,8 @@ namespace TrybeHotel.Repository
                     Name = hotel.Name,
                     Address = hotel.Address,
                     CityId = city.CityId,
-                    CityName = city.Name
+                    CityName = city.Name,
+                    State = city.State,
                 }
             };
             return allRooms;
@@ -64,7 +65,8 @@ namespace TrybeHotel.Repository
                     Name = hotel.Name,
                     Address = hotel.Address,
                     CityId = hotel.CityId,
-                    CityName = city.Name 
+                    CityName = city.Name,
+                    State = city.State,
                 } 
             };
             return newCity.Last();

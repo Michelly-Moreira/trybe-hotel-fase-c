@@ -154,18 +154,18 @@
           }
         },
         {
-          "ruleId": "CS8603",
+          "ruleId": "CS8604",
           "level": "warning",
-          "message": "Possível retorno de referência nula.",
+          "message": "Possível argumento de referência nula para o parâmetro 'email' em 'BookingResponse IBookingRepository.Add(BookingDtoInsert booking, string email)'.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/michelly/Trybe/trybe-project/eletiva-csharp/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Repository/UserRepository.cs",
+                "uri": "file:///home/michelly/Trybe/trybe-project/eletiva-csharp/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Controllers/BookingController.cs",
                 "region": {
-                  "startLine": 34,
-                  "startColumn": 24,
-                  "endLine": 34,
-                  "endColumn": 28
+                  "startLine": 29,
+                  "startColumn": 61,
+                  "endLine": 29,
+                  "endColumn": 66
                 }
               }
             }
@@ -175,18 +175,18 @@
           }
         },
         {
-          "ruleId": "CS8603",
+          "ruleId": "CS8604",
           "level": "warning",
-          "message": "Possível retorno de referência nula.",
+          "message": "Possível argumento de referência nula para o parâmetro 'email' em 'BookingResponse IBookingRepository.GetBooking(int bookingId, string email)'.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/michelly/Trybe/trybe-project/eletiva-csharp/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Repository/UserRepository.cs",
+                "uri": "file:///home/michelly/Trybe/trybe-project/eletiva-csharp/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Controllers/BookingController.cs",
                 "region": {
-                  "startLine": 73,
-                  "startColumn": 24,
-                  "endLine": 73,
-                  "endColumn": 28
+                  "startLine": 46,
+                  "startColumn": 64,
+                  "endLine": 46,
+                  "endColumn": 69
                 }
               }
             }
@@ -238,18 +238,18 @@
           }
         },
         {
-          "ruleId": "CS8604",
+          "ruleId": "CS8603",
           "level": "warning",
-          "message": "Possível argumento de referência nula para o parâmetro 'email' em 'BookingResponse IBookingRepository.Add(BookingDtoInsert booking, string email)'.",
+          "message": "Possível retorno de referência nula.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/michelly/Trybe/trybe-project/eletiva-csharp/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Controllers/BookingController.cs",
+                "uri": "file:///home/michelly/Trybe/trybe-project/eletiva-csharp/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Repository/UserRepository.cs",
                 "region": {
-                  "startLine": 29,
-                  "startColumn": 61,
-                  "endLine": 29,
-                  "endColumn": 66
+                  "startLine": 34,
+                  "startColumn": 24,
+                  "endLine": 34,
+                  "endColumn": 28
                 }
               }
             }
@@ -259,18 +259,18 @@
           }
         },
         {
-          "ruleId": "CS8604",
+          "ruleId": "CS8603",
           "level": "warning",
-          "message": "Possível argumento de referência nula para o parâmetro 'email' em 'BookingResponse IBookingRepository.GetBooking(int bookingId, string email)'.",
+          "message": "Possível retorno de referência nula.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///home/michelly/Trybe/trybe-project/eletiva-csharp/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Controllers/BookingController.cs",
+                "uri": "file:///home/michelly/Trybe/trybe-project/eletiva-csharp/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Repository/UserRepository.cs",
                 "region": {
-                  "startLine": 46,
-                  "startColumn": 64,
-                  "endLine": 46,
-                  "endColumn": 69
+                  "startLine": 73,
+                  "startColumn": 24,
+                  "endLine": 73,
+                  "endColumn": 28
                 }
               }
             }
