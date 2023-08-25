@@ -27,7 +27,7 @@ namespace TrybeHotel.Controllers
 
         [HttpPost]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [Authorize(Policy = "Admin")]
+        [Authorize(Policy = "admin")]
         public IActionResult PostHotel([FromBody] Hotel hotel){
             var token = HttpContext.User.Identity as ClaimsIdentity;
             var email = token?.Claims.FirstOrDefault(c => c.Type == "email")?.Value;

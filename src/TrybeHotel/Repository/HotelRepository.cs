@@ -42,6 +42,7 @@ namespace TrybeHotel.Repository
             var newHotel = from oneHotel in listHotels
             join city in listCities on oneHotel.CityId equals city.CityId
             where oneHotel.HotelId == hotel.HotelId
+            orderby oneHotel.HotelId
             select new HotelDto
             {
                 HotelId = hotel.HotelId,

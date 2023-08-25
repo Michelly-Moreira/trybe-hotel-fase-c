@@ -25,7 +25,7 @@ namespace TrybeHotel.Controllers
 
         [HttpPost]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [Authorize(Policy = "Admin")]
+        [Authorize(Policy = "admin")]
         public IActionResult PostRoom([FromBody] Room room){
             var token = HttpContext.User.Identity as ClaimsIdentity;
             var email = token?.Claims.FirstOrDefault(c => c.Type == "email")?.Value;
@@ -34,7 +34,7 @@ namespace TrybeHotel.Controllers
 
         [HttpDelete("{RoomId}")]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [Authorize(Policy = "Admin")]
+        [Authorize(Policy = "admin")]
         public IActionResult Delete(int RoomId)
         {
             var token = HttpContext.User.Identity as ClaimsIdentity;

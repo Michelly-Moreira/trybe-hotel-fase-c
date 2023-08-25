@@ -20,7 +20,7 @@ namespace TrybeHotel.Controllers
         
         [HttpGet]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [Authorize(Policy = "Admin")]
+        [Authorize(Policy = "admin")]
         public IActionResult GetUsers(){
             
             return Ok(_repository.GetUsers());

@@ -22,7 +22,7 @@ namespace TrybeHotel.Controllers
 
         [HttpPost]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [Authorize(Policy = "Client")]
+        [Authorize(Policy = "client")]
         public IActionResult Add([FromBody] BookingDtoInsert bookingInsert){
             var token = HttpContext.User.Identity as ClaimsIdentity;
             var email = token?.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)?.Value;
@@ -39,7 +39,7 @@ namespace TrybeHotel.Controllers
 
         [HttpGet("{Bookingid}")]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [Authorize(Policy = "Client")]
+        [Authorize(Policy = "client")]
         public IActionResult GetBooking(int Bookingid){
             var token = HttpContext.User.Identity as ClaimsIdentity;
             var email = token?.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)?.Value;
