@@ -27,7 +27,14 @@ namespace TrybeHotel.Controllers
         // 3. Desenvolva o endpoint PUT /city
         [HttpPut]
         public IActionResult PutCity([FromBody] City city){
-            return Ok(_repository.UpdateCity(city));
+            var updatedCity = _repository.UpdateCity(city);
+            switch (updatedCity)
+            {
+                case null:
+                return BadRequest(new {message = "city does not exist"});
+                default:
+                return Ok(updatedCity);
+            }
         }
     }
 }

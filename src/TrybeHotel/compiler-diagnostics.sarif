@@ -154,6 +154,48 @@
           }
         },
         {
+          "ruleId": "CS8603",
+          "level": "warning",
+          "message": "Possível retorno de referência nula.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/michelly/Trybe/trybe-project/eletiva-csharp/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Repository/UserRepository.cs",
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 24,
+                  "endLine": 34,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8603",
+          "level": "warning",
+          "message": "Possível retorno de referência nula.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///home/michelly/Trybe/trybe-project/eletiva-csharp/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Repository/UserRepository.cs",
+                "region": {
+                  "startLine": 73,
+                  "startColumn": 24,
+                  "endLine": 73,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "CS1998",
           "level": "warning",
           "message": "Este método assíncrono não possui operadores 'await' e será executado de modo síncrono. É recomendável o uso do operador 'await' para aguardar chamadas à API desbloqueadas ou do operador 'await Task.Run(...)' para realizar um trabalho associado à CPU em um thread em segundo plano.",
@@ -229,48 +271,6 @@
                   "startColumn": 64,
                   "endLine": 46,
                   "endColumn": 69
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8603",
-          "level": "warning",
-          "message": "Possível retorno de referência nula.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/michelly/Trybe/trybe-project/eletiva-csharp/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Repository/UserRepository.cs",
-                "region": {
-                  "startLine": 34,
-                  "startColumn": 24,
-                  "endLine": 34,
-                  "endColumn": 28
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8603",
-          "level": "warning",
-          "message": "Possível retorno de referência nula.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/michelly/Trybe/trybe-project/eletiva-csharp/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Repository/UserRepository.cs",
-                "region": {
-                  "startLine": 73,
-                  "startColumn": 24,
-                  "endLine": 73,
-                  "endColumn": 28
                 }
               }
             }
