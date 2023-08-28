@@ -49,27 +49,6 @@
           }
         },
         {
-          "ruleId": "CS1998",
-          "level": "warning",
-          "message": "Este método assíncrono não possui operadores 'await' e será executado de modo síncrono. É recomendável o uso do operador 'await' para aguardar chamadas à API desbloqueadas ou do operador 'await Task.Run(...)' para realizar um trabalho associado à CPU em um thread em segundo plano.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///home/michelly/Trybe/trybe-project/eletiva-csharp/csharp-026-csharp-projeto-trybe-hotel-fase-c/src/TrybeHotel/Controllers/GeoController.cs",
-                "region": {
-                  "startLine": 36,
-                  "startColumn": 42,
-                  "endLine": 36,
-                  "endColumn": 61
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "CS8603",
           "level": "warning",
           "message": "Possível retorno de referência nula.",
@@ -215,20 +194,6 @@
             "tags": [
               "Telemetry",
               "EnabledRuleInAggressiveMode"
-            ]
-          }
-        },
-        "CS1998": {
-          "id": "CS1998",
-          "shortDescription": "O método assíncrono não possui operadores 'await' e será executado de forma síncrona",
-          "defaultLevel": "warning",
-          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS1998)",
-          "properties": {
-            "category": "Compiler",
-            "isEnabledByDefault": true,
-            "tags": [
-              "Compiler",
-              "Telemetry"
             ]
           }
         },
