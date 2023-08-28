@@ -30,7 +30,7 @@ namespace TrybeHotel.Repository
                     CheckOut = booking.CheckOut,
                     GuestQuant = booking.GuestQuant,
                     RoomId = booking.RoomId,
-                    UserId = user.UserId,
+                    UserId = user!.UserId,
                 };
 
                 allBookings.Add(bookForAdd);
@@ -68,7 +68,7 @@ namespace TrybeHotel.Repository
             }
             else
             {
-                return null;
+                return null!;
             }
         }
 
@@ -85,7 +85,7 @@ namespace TrybeHotel.Repository
             join h in allHotels on r.HotelId equals h.HotelId
             join c in allCities on h.CityId equals c.CityId
             where b.BookingId == bookingId
-            where b.User.Email == email
+            where b.User!.Email == email
             select new BookingResponse
             {
                 BookingId = b.BookingId,
@@ -113,7 +113,7 @@ namespace TrybeHotel.Repository
             switch (getBooking.FirstOrDefault())
             {
                 case null:
-                return null;
+                return null!;
                 default:
                 return getBooking.First();
             }

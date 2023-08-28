@@ -26,7 +26,7 @@ namespace TrybeHotel.Controllers
         public IActionResult Add([FromBody] BookingDtoInsert bookingInsert){
             var token = HttpContext.User.Identity as ClaimsIdentity;
             var email = token?.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)?.Value;
-            var newBooking = _repository.Add(bookingInsert, email);
+            var newBooking = _repository.Add(bookingInsert, email!);
             switch (newBooking)
             {
                 case null:
@@ -43,7 +43,7 @@ namespace TrybeHotel.Controllers
         public IActionResult GetBooking(int Bookingid){
             var token = HttpContext.User.Identity as ClaimsIdentity;
             var email = token?.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)?.Value;
-            var getBooking = _repository.GetBooking(Bookingid, email);
+            var getBooking = _repository.GetBooking(Bookingid, email!);
             switch (getBooking)
             {
                 case null:

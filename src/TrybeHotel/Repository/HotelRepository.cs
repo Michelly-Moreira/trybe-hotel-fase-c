@@ -54,5 +54,15 @@ namespace TrybeHotel.Repository
             };
             return newHotel.Last();
         }
+
+        /* public void DeleteHotel(int HotelId) {
+           var hotel = _context.Hotels.Find(HotelId);
+            if(hotel != null){
+                _context.Hotels.Remove(hotel);
+                _context.SaveChanges();
+            }else{
+                Console.WriteLine("This hotel does not exist");
+            }
+        } */
     }
 }

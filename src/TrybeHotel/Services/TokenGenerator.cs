@@ -26,7 +26,7 @@ namespace TrybeHotel.Services
             var tokenDescriptor = new SecurityTokenDescriptor(){
                 Subject = new ClaimsIdentity(claims),
                 SigningCredentials = new SigningCredentials(
-                    new SymmetricSecurityKey(Encoding.ASCII.GetBytes(_tokenOptions.Secret)),
+                    new SymmetricSecurityKey(Encoding.ASCII.GetBytes(_tokenOptions.Secret!)),
                     SecurityAlgorithms.HmacSha256Signature
                     ),
                 Expires = DateTime.Now.AddDays(_tokenOptions.ExpiresDay)
@@ -38,8 +38,8 @@ namespace TrybeHotel.Services
         private ClaimsIdentity AddClaims(UserDto user)
         {
             var claims = new ClaimsIdentity();
-            claims.AddClaim(new Claim(ClaimTypes.Role, user.UserType));
-            claims.AddClaim(new Claim(ClaimTypes.Email, user.Email));
+            claims.AddClaim(new Claim(ClaimTypes.Role, user.UserType!));
+            claims.AddClaim(new Claim(ClaimTypes.Email, user.Email!));
             return claims;
         }
     }

@@ -33,5 +33,16 @@ namespace TrybeHotel.Controllers
             var email = token?.Claims.FirstOrDefault(c => c.Type == "email")?.Value;
             return Created("",_repository.AddHotel(hotel));
         }
+
+        /* [HttpDelete("{HotelId}")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        [Authorize(Policy = "admin")]
+        public IActionResult Delete(int HotelId)
+        {
+            var token = HttpContext.User.Identity as ClaimsIdentity;
+            var email = token?.Claims.FirstOrDefault(c => c.Type == "email")?.Value;
+            _repository.DeleteHotel(HotelId);
+            return NoContent();
+        } */
     }
 }
