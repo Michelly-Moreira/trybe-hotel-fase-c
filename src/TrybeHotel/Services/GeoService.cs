@@ -22,7 +22,7 @@ namespace TrybeHotel.Services
             
             // adicionando o header
             requestMessage.Headers.Add("Accept", "application/json");
-            requestMessage.Headers.Add("User-Agent", "nome-do-software-que-faz-a-requisição");
+            requestMessage.Headers.Add("User-Agent", "nome-do-software");
 
             // Recebendo a resposta
             var response = await _client.SendAsync(requestMessage);
