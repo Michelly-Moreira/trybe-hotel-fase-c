@@ -107,7 +107,7 @@ namespace TrybeHotel.Services
                 hotelsWithDistance.Add(hotelsResponse);
             }
              //ordena os hoteis por ordem crescente da distância
-                var sortedHotels = hotelsWithDistance.OrderBy(h => h.Distance).ToList();
+            var sortedHotels = hotelsWithDistance.OrderBy(h => h.Distance).ToList();
             //Não sei porque não retorna o resultado!
             return sortedHotels;
         }
